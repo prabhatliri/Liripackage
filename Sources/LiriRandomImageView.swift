@@ -26,7 +26,7 @@ class LiriRandomImageView : UIView {
     }
     func addKFView() {
         let imageView = UIImageView(frame: self.bounds)
-        imageView.kf.setImage(with: url)
+        imageView.kf.setImage(with: url, options: [.memoryCacheExpiration(.expired), .diskCacheExpiration(.expired)])
         imageView.backgroundColor = UIColor.green
         self.addSubview(imageView)
     }
