@@ -24,5 +24,6 @@ class LiriRandomImageView : UIView {
     func addKFView() {
         let imageView = UIImageView(frame: self.bounds)
         imageView.kf.setImage(with: url)
+        self.addSubview(imageView)
     }
 }
