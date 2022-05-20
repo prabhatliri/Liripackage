@@ -17,7 +17,6 @@ class LiriRandomImageView : UIView {
     }
     override class func awakeFromNib() {
         super.awakeFromNib()
-        addKFView() 
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)
