@@ -22,6 +22,7 @@ class LiriRandomImageView : UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.backgroundColor = UIColor.purple
+        addKFView()
     }
     func addKFView() {
         let imageView = UIImageView(frame: self.bounds)
